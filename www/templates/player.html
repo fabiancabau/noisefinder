@@ -1,0 +1,22 @@
+<ion-view view-title="">
+  <ion-content class="padding imgband no-header">
+
+
+    <span class="song-title custom-font">
+      Sleeping With Sirens
+    </span>
+    <span class="song-name custom-font">
+      {{platform}}
+    </span>
+    
+  </ion-content>
+
+  <div class="bar bar-footer bar-clear"> 
+
+
+    <a class="button button-icon icon ion-skip-backward"></a>
+    <a class="button button-icon icon title" style="margin-top:4px;" ng-click="play()" ng-class="!isPlaying ? 'ion-play' : 'ion-pause'"></a>
+    <a class="button button-icon icon ion-skip-forward pull-right"></a>
+
+  </div>
+</ion-view>

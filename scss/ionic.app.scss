@@ -1,0 +1,126 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #c6c6c6 !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.imgband {
+	background-image: url(../img/download.jpg);
+	background-size: center;
+	background-attachment:fixed;
+    background-position: center;
+}
+
+.black-text {
+	color:#000 !important;
+}
+
+.scroll-content {
+  overflow: visible !important;
+}
+
+.imgband {
+	background: url(../img/download.jpg);
+	// background-size: cover;
+	background-attachment:fixed;
+    background-position: center;
+}
+
+.bar.bar-header {
+  background: rgba(0,0,0,.01);
+  border-bottom-width: 0;
+}
+
+.menu-footer {
+  background: #DE541E !important;
+  border-bottom-width: 0;
+}
+ 
+.bar.bar-header h1 {
+  color: black !important;
+}
+
+.bar.bar-footer {
+	background-color:rgba(0,0,0,0.5);
+	height:80px;
+}
+
+.menu-header {
+	background-color:#878472 !important;
+}
+ 
+ 
+.platform-ios.platform-cordova:not(.fullscreen) .has-header {
+  top:0px;
+}
+
+.my-menu {
+	background-color: #3F3F37;
+}
+
+.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
+	background-color: #3F3F37;
+	color: #FFFFFF;
+	margin: 0px;
+	border: 0px;
+}
+
+.list.item {
+	border-left: 2px solid #DE541E;
+}
+
+.platform-browser .my-menu {
+	top:44px !important;
+	background-color:#3F3F37;
+}
+
+.platform-ios .my-menu {
+	top:60px !important;
+	background-color:#3F3F37;
+}
+
+.platform-android .my-menu {
+	top:44px !important;
+	background-color:#3F3F37;
+}
+
+
+.song-title {
+	display:flex; font-size:32px; justify-content:center; color:#fff; margin-top:140px;
+}
+
+.song-name {
+	display:flex; font-size:32px; justify-content:center; color:#fff; margin-top:20px;
+}
+
+
+.custom-font {
+	font-family: 'Poiret One', cursive;
+}
+
+.open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
