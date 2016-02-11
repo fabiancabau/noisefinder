@@ -9733,84 +9733,114 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.imgband {
+.custom-font {
+  font-family: 'Poiret One', cursive; }
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif; }
+
+.player .imgband {
   background-image: url(../img/download.jpg);
   background-size: center;
   background-attachment: fixed;
   background-position: center; }
 
-.black-text {
-  color: #000 !important; }
-
-.scroll-content {
-  overflow: visible !important; }
-
-.imgband {
-  background: url(../img/download.jpg);
-  background-attachment: fixed;
-  background-position: center; }
-
-.bar.bar-header {
-  background: rgba(0, 0, 0, 0.01);
-  border-bottom-width: 0; }
-
-.menu-footer {
-  background: #DE541E !important;
-  border-bottom-width: 0; }
-
-.bar.bar-header h1 {
-  color: black !important; }
-
-.bar.bar-footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 80px; }
-
-.menu-header {
-  background-color: #878472 !important; }
-
-.platform-ios.platform-cordova:not(.fullscreen) .has-header {
-  top: 0px; }
-
-.my-menu {
-  background-color: #3F3F37; }
-
-.my-menu .item, .my-menu .item-content, .my-menu .item-complex {
-  background-color: #3F3F37;
-  color: #FFFFFF;
-  margin: 0px;
-  border: 0px; }
-
-.list.item {
-  border-left: 2px solid #DE541E; }
-
-.platform-browser .my-menu {
-  top: 44px !important;
-  background-color: #3F3F37; }
-
-.platform-ios .my-menu {
-  top: 60px !important;
-  background-color: #3F3F37; }
-
-.platform-android .my-menu {
-  top: 44px !important;
-  background-color: #3F3F37; }
-
-.song-title {
+.player .song-title {
   display: flex;
   font-size: 32px;
   justify-content: center;
   color: #fff;
   margin-top: 140px; }
 
-.song-name {
+.player .song-name {
   display: flex;
   font-size: 32px;
   justify-content: center;
   color: #fff;
   margin-top: 20px; }
 
-.custom-font {
-  font-family: 'Poiret One', cursive; }
+.player .profile-background {
+  background-color: #000; }
 
-.open-sans {
-  font-family: 'Open Sans', sans-serif; }
+.player .imgband {
+  background: url(../img/download.jpg);
+  background-attachment: fixed;
+  background-position: center; }
+
+.player .scroll-content {
+  overflow: visible !important; }
+
+.left-menu .menu-toggle-icon {
+  color: #FFF; }
+
+.left-menu .bar.bar-header {
+  background-color: #118AB2 !important;
+  color: #FFF;
+  border-bottom-width: 0; }
+
+.left-menu ion-header-bar {
+  background-color: transparent !important; }
+
+.left-menu .menu-footer {
+  background: #06D6A0 !important;
+  border-bottom-width: 0; }
+
+.left-menu .bar.bar-header h1 {
+  color: black !important; }
+
+.left-menu .bar.bar-footer {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.left-menu .menu-header {
+  background-color: #3F3F37 !important;
+  color: #FFF !important; }
+
+.left-menu .platform-ios.platform-cordova:not(.fullscreen) .has-header {
+  top: 0px; }
+
+.left-menu .my-menu {
+  background-color: #073B4C !important; }
+
+.left-menu .my-menu .item, .left-menu .my-menu .item-content, .left-menu .my-menu .item-complex {
+  background-color: #073B4C !important;
+  color: #FFFFFF;
+  margin: 0px;
+  border: 0px; }
+
+.left-menu .list.item {
+  border-left: 2px solid #DE541E; }
+
+.left-menu .platform-browser .my-menu {
+  top: 44px !important;
+  background-color: #3F3F37; }
+
+.left-menu .platform-ios .my-menu {
+  top: 60px !important;
+  background-color: #3F3F37; }
+
+.left-menu .platform-android .my-menu {
+  top: 44px !important;
+  background-color: #3F3F37; }
+
+.profile .center-card-avatar {
+  max-width: 128px !important;
+  max-height: 128px !important;
+  width: 128px;
+  height: 128px;
+  left: 50% !important;
+  margin-left: -64px; }
+
+.profile .profile-background {
+  background-color: #FFD166 !important; }
+
+.profile #user-info {
+  margin-top: 30%; }
+
+.profile #user-options .option-text {
+  font-size: 12px; }
+
+.profile #user-options #fav {
+  font-size: 20px; }
+
+.profile #user-options #location {
+  font-size: 20px; }

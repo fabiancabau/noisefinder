@@ -23,95 +23,14 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-
-.imgband {
-	background-image: url(../img/download.jpg);
-	background-size: center;
-	background-attachment:fixed;
-    background-position: center;
-}
-
-.black-text {
-	color:#000 !important;
-}
-
-.scroll-content {
-  overflow: visible !important;
-}
-
-.imgband {
-	background: url(../img/download.jpg);
-	// background-size: cover;
-	background-attachment:fixed;
-    background-position: center;
-}
-
-.bar.bar-header {
-  background: rgba(0,0,0,.01);
-  border-bottom-width: 0;
-}
-
-.menu-footer {
-  background: #DE541E !important;
-  border-bottom-width: 0;
-}
- 
-.bar.bar-header h1 {
-  color: black !important;
-}
-
-.bar.bar-footer {
-	background-color:rgba(0,0,0,0.5);
-}
-
-.menu-header {
-	background-color:#878472 !important;
-}
- 
- 
-.platform-ios.platform-cordova:not(.fullscreen) .has-header {
-  top:0px;
-}
-
-.my-menu {
-	background-color: #3F3F37;
-}
-
-.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
-	background-color: #3F3F37;
-	color: #FFFFFF;
-	margin: 0px;
-	border: 0px;
-}
-
-.list.item {
-	border-left: 2px solid #DE541E;
-}
-
-.platform-browser .my-menu {
-	top:44px !important;
-	background-color:#3F3F37;
-}
-
-.platform-ios .my-menu {
-	top:60px !important;
-	background-color:#3F3F37;
-}
-
-.platform-android .my-menu {
-	top:44px !important;
-	background-color:#3F3F37;
-}
+$avatar-size: 128px;
 
 
-.song-title {
-	display:flex; font-size:32px; justify-content:center; color:#fff; margin-top:140px;
-}
-
-.song-name {
-	display:flex; font-size:32px; justify-content:center; color:#fff; margin-top:20px;
-}
-
+$blue: #118AB2 !important;
+$green: #06D6A0 !important;
+$red: #EF476F !important;
+$yellow: #FFD166 !important;
+$dark-blue: #073B4C !important;
 
 .custom-font {
 	font-family: 'Poiret One', cursive;
@@ -120,6 +39,157 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 .open-sans {
 	font-family: 'Open Sans', sans-serif;
 }
+
+// ========================== PLAYER CUSTOM CSS ===========================
+.player {
+
+	.imgband {
+		background-image: url(../img/download.jpg);
+		background-size: center;
+		background-attachment:fixed;
+	    background-position: center;
+	}
+
+	.song-title {
+		display:flex; font-size:32px; justify-content:center; color:#fff; margin-top:140px;
+	}
+
+	.song-name {
+		display:flex; font-size:32px; justify-content:center; color:#fff; margin-top:20px;
+	}
+
+	.profile-background {
+		background-color:#000;
+	}
+
+	.imgband {
+		background: url(../img/download.jpg);
+		// background-size: cover;
+		background-attachment:fixed;
+	    background-position: center;
+	}
+
+	.scroll-content {
+	  overflow: visible !important;
+	}
+}
+
+
+//  ====================== END PLAYER CUSTOM CSS =======================================
+
+
+
+// ======================== MENU SPECIFIC CSS ====================================
+.left-menu {
+
+
+
+	.menu-toggle-icon {
+		color:#FFF;
+	}
+
+	.bar.bar-header {
+	  // background: rgba(222, 84, 30, 0.2) !important;
+	  background-color:$blue;
+	  color:#FFF;
+	  border-bottom-width: 0;
+	}
+
+	ion-header-bar {
+		background-color:transparent !important;
+	}
+
+	.menu-footer {
+	  background: $green;
+	  border-bottom-width: 0;
+	}
+	 
+	.bar.bar-header h1 {
+	  color: black !important;
+	}
+
+	.bar.bar-footer {
+		background-color:rgba(0,0,0,0.5);
+	}
+
+	.menu-header {
+		background-color:#3F3F37 !important;
+		color:#FFF !important;
+	}	 
+	 
+	.platform-ios.platform-cordova:not(.fullscreen) .has-header {
+	  top:0px;
+	}
+
+	.my-menu {
+		background-color: $dark-blue;
+	}
+
+	.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
+		background-color: $dark-blue;
+		color: #FFFFFF;
+		margin: 0px;
+		border: 0px;
+	}
+
+	.list.item {
+		border-left: 2px solid #DE541E;
+	}
+
+	.platform-browser .my-menu {
+		top:44px !important;
+		background-color:#3F3F37;
+	}
+
+	.platform-ios .my-menu {
+		top:60px !important;
+		background-color:#3F3F37;
+	}
+
+	.platform-android .my-menu {
+		top:44px !important;
+		background-color:#3F3F37;
+	}
+
+}
+
+.profile {
+	.center-card-avatar {
+		max-width: $avatar-size !important;
+		max-height: $avatar-size !important;
+		width: $avatar-size;
+		height: $avatar-size;
+		left:50% !important;
+		margin-left:-($avatar-size/2);
+	}
+
+	.profile-background {
+		background-color:$yellow;
+	}
+
+	#user-info {
+		margin-top:30%;
+	}
+
+	#user-options {
+		
+		.option-text {
+			font-size:12px;
+		}
+			
+		#fav {
+			font-size:20px;
+		}
+
+		#location {
+			font-size:20px;
+		}
+	}
+
+}
+
+
+
 
 
 

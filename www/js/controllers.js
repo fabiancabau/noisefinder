@@ -29,4 +29,8 @@ angular.module('starter.controllers', [])
       $scope.audio.pause();
     }
   }  
+})
+.controller('ProfileCtrl', function($scope, $rootScope) {
+
+  
 });
