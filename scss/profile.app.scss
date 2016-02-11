@@ -1,0 +1,82 @@
+.profile {
+
+
+	.center-card-avatar {
+		max-width: $avatar-size !important;
+		max-height: $avatar-size !important;
+		width: $avatar-size;
+		height: $avatar-size;
+		left:50% !important;
+		margin-left:-($avatar-size/2);
+	}
+
+	.profile-background {
+		background-color:$yellow;
+	}
+
+	.band-profile-background {
+		background-image: url(../img/back_semp.jpg);
+		background-size: center;
+		background-attachment:fixed;
+	    background-position: center;
+	}
+
+	#user-info {
+		margin-top:30%;
+		color:#FFF;
+
+		h2 {
+			color:#FFF;
+			font-weight: bold;
+		}
+	}
+
+	.action-bar {
+		display:flex;
+		flex:1;
+		justify-content: space-around;
+		width:100%;
+	}
+
+	.round {
+		border-radius:50%;
+	}
+
+	#user-options {
+		
+		.option-text {
+			font-size:12px;
+		}
+			
+		#fav {
+			font-size:20px;
+		}
+
+		#location {
+			font-size:20px;
+		}
+	}
+
+	.list {
+		.item {
+			background-color:transparent;
+			color:#E6E6E6;
+			border:none;
+			border-bottom:1px solid rgba(255,255,255,0.2);
+			font-size: 14px;
+		}
+
+		.item:last-child {
+			border:none;
+		}
+
+		.item-icon-left {
+
+			.icon {
+				font-size:14px;
+			}
+			
+		}
+	}
+
+}

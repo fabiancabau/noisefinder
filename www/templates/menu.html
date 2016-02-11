@@ -14,27 +14,40 @@
 
   <ion-side-menu side="left">
 
-    <ion-content class="my-menu">
-      <ion-list class="open-sans">
-        <ion-item menu-close href="#/app/profile">
-          <i class="icon ion-android-person"></i> Meu perfil
-        </ion-item>
-        <ion-item menu-close href="#/app/search">
-          <i class="icon ion-location"></i> Bandas da região
-        </ion-item>
-        <ion-item menu-close href="#/app/browse">
-          <i class="icon ion-ios-search-strong"></i> BandFinder
-        </ion-item>
-        <ion-item menu-close href="#/app/playlists">
-          <i class="icon ion-ios-list"></i> Playlists
-        </ion-item>
-      </ion-list>
+    <ion-content class="my-menu" scroll="false">
+
+      <div class="avatar-menu">
+
+        <div class="col header text-center">
+
+          <div class="img-avatar-header">
+            <img class="img-avatar" src="img/user.jpg"/>
+
+            <h4 class="menu-avatar-name">Fabian Cabau</h4>
+          </div>
+
+        <ion-list class="open-sans menu-options">
+          <ion-item menu-close href="#/app/profile">
+            <i class="icon ion-android-person"></i> Meu perfil
+          </ion-item>
+          <ion-item menu-close href="#/app/bandprofile">
+            <i class="icon ion-location"></i> Bandas da região
+          </ion-item>
+          <ion-item menu-close href="#/app/browse">
+            <i class="icon ion-ios-search-strong"></i> BandFinder
+          </ion-item>
+          <ion-item menu-close href="#/app/playlists">
+            <i class="icon ion-ios-list"></i> Playlists
+          </ion-item>
+        </ion-list>
+
+        </div>
+
+      </div>
     </ion-content>
 
     <ion-footer-bar class="bar bar-footer bar-clear menu-footer">
-      <!-- <a class="button button-icon icon ion-skip-backward"></a> -->
       <a class="button button-icon icon ion-gear-b title"></a>
-      <!-- <a class="button button-icon icon ion-skip-forward pull-right"></a> -->
     </ion-footer-bar>
 
 

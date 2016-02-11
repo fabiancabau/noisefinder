@@ -46,6 +46,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.bandprofile', {
+    url: '/bandprofile',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/band-profile.html',
+        controller: 'BandProfileCtrl'
+      }
+    }
+  })
+
   .state('app.profile', {
     url: '/profile',
     views: {

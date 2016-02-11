@@ -9739,8 +9739,17 @@ a.button {
 .open-sans {
   font-family: 'Open Sans', sans-serif; }
 
+.scroll-content {
+  overflow: visible !important; }
+
+.has-header {
+  top: 0 !important; }
+
+.no-header {
+  padding-top: 40px; }
+
 .player .imgband {
-  background-image: url(../img/download.jpg);
+  background-image: url(../img/download.jpg) no-repeat;
   background-size: center;
   background-attachment: fixed;
   background-position: center; }
@@ -9770,11 +9779,17 @@ a.button {
 .player .scroll-content {
   overflow: visible !important; }
 
+.left-menu .scroll-content {
+  overflow: visible !important; }
+
+.left-menu .menu-content {
+  box-shadow: none; }
+
 .left-menu .menu-toggle-icon {
   color: #FFF; }
 
 .left-menu .bar.bar-header {
-  background-color: #118AB2 !important;
+  background: rgba(255, 255, 255, 0.01) !important;
   color: #FFF;
   border-bottom-width: 0; }
 
@@ -9782,7 +9797,7 @@ a.button {
   background-color: transparent !important; }
 
 .left-menu .menu-footer {
-  background: #06D6A0 !important;
+  background: #06D6A0;
   border-bottom-width: 0; }
 
 .left-menu .bar.bar-header h1 {
@@ -9799,10 +9814,11 @@ a.button {
   top: 0px; }
 
 .left-menu .my-menu {
-  background-color: #073B4C !important; }
+  background-color: #086788;
+  display: flex !important; }
 
 .left-menu .my-menu .item, .left-menu .my-menu .item-content, .left-menu .my-menu .item-complex {
-  background-color: #073B4C !important;
+  background-color: #086788;
   color: #FFFFFF;
   margin: 0px;
   border: 0px; }
@@ -9810,17 +9826,36 @@ a.button {
 .left-menu .list.item {
   border-left: 2px solid #DE541E; }
 
-.left-menu .platform-browser .my-menu {
-  top: 44px !important;
-  background-color: #3F3F37; }
+.left-menu .avatar-menu {
+  display: -webkit-flex !important;
+  -webkit-flex-direction: column;
+  height: 100%;
+  width: 100%; }
 
-.left-menu .platform-ios .my-menu {
-  top: 60px !important;
-  background-color: #3F3F37; }
+.left-menu .avatar-menu img {
+  max-width: 80%; }
 
-.left-menu .platform-android .my-menu {
-  top: 44px !important;
-  background-color: #3F3F37; }
+.left-menu .avatar-menu > .header {
+  -webkit-flex: 4;
+  padding-top: 40px; }
+
+.left-menu .menu-options {
+  text-align: left; }
+  .left-menu .menu-options .list {
+    padding-top: 0px; }
+
+.left-menu .img-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%; }
+
+.left-menu .menu-avatar-name {
+  color: #FFF;
+  padding-bottom: 5px; }
+
+.left-menu .img-avatar-header {
+  border-bottom: 1px rgba(255, 255, 255, 0.1) solid !important;
+  border-bottom-width: 70%; }
 
 .profile .center-card-avatar {
   max-width: 128px !important;
@@ -9831,10 +9866,29 @@ a.button {
   margin-left: -64px; }
 
 .profile .profile-background {
-  background-color: #FFD166 !important; }
+  background-color: #F0C808; }
+
+.profile .band-profile-background {
+  background-image: url(../img/back_semp.jpg);
+  background-size: center;
+  background-attachment: fixed;
+  background-position: center; }
 
 .profile #user-info {
-  margin-top: 30%; }
+  margin-top: 30%;
+  color: #FFF; }
+  .profile #user-info h2 {
+    color: #FFF;
+    font-weight: bold; }
+
+.profile .action-bar {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  width: 100%; }
+
+.profile .round {
+  border-radius: 50%; }
 
 .profile #user-options .option-text {
   font-size: 12px; }
@@ -9844,3 +9898,16 @@ a.button {
 
 .profile #user-options #location {
   font-size: 20px; }
+
+.profile .list .item {
+  background-color: transparent;
+  color: #E6E6E6;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px; }
+
+.profile .list .item:last-child {
+  border: none; }
+
+.profile .list .item-icon-left .icon {
+  font-size: 14px; }

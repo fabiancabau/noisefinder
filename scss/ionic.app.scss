@@ -26,11 +26,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 $avatar-size: 128px;
 
 
-$blue: #118AB2 !important;
-$green: #06D6A0 !important;
-$red: #EF476F !important;
-$yellow: #FFD166 !important;
-$dark-blue: #073B4C !important;
+$blue: #06AED5;
+$green: #06D6A0;
+$red: #DD1C1A;
+$yellow: #F0C808;
+$dark-blue: #086788;
 
 .custom-font {
 	font-family: 'Poiret One', cursive;
@@ -40,11 +40,23 @@ $dark-blue: #073B4C !important;
 	font-family: 'Open Sans', sans-serif;
 }
 
+.scroll-content {
+  overflow: visible !important;
+}
+
+.has-header {
+	top:0 !important;
+}
+
+.no-header {
+	padding-top:40px;
+}
+
 // ========================== PLAYER CUSTOM CSS ===========================
 .player {
 
 	.imgband {
-		background-image: url(../img/download.jpg);
+		background-image: url(../img/download.jpg) no-repeat;
 		background-size: center;
 		background-attachment:fixed;
 	    background-position: center;
@@ -80,8 +92,16 @@ $dark-blue: #073B4C !important;
 
 
 // ======================== MENU SPECIFIC CSS ====================================
+
 .left-menu {
 
+	.scroll-content {
+	  overflow: visible !important;
+	}
+
+	.menu-content {
+		box-shadow:none;
+	}
 
 
 	.menu-toggle-icon {
@@ -89,8 +109,8 @@ $dark-blue: #073B4C !important;
 	}
 
 	.bar.bar-header {
-	  // background: rgba(222, 84, 30, 0.2) !important;
-	  background-color:$blue;
+	  background: rgba(255,255,255, 0.01) !important;
+	  // background-color:transparent;
 	  color:#FFF;
 	  border-bottom-width: 0;
 	}
@@ -123,6 +143,7 @@ $dark-blue: #073B4C !important;
 
 	.my-menu {
 		background-color: $dark-blue;
+		display:flex !important;
 	}
 
 	.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
@@ -136,57 +157,51 @@ $dark-blue: #073B4C !important;
 		border-left: 2px solid #DE541E;
 	}
 
-	.platform-browser .my-menu {
-		top:44px !important;
-		background-color:#3F3F37;
+	.avatar-menu {
+		display: -webkit-flex !important;
+    	-webkit-flex-direction: column;
+    	height: 100%;
+    	width:100%;
 	}
 
-	.platform-ios .my-menu {
-		top:60px !important;
-		background-color:#3F3F37;
+	.avatar-menu img {
+		max-width: 80%;
 	}
 
-	.platform-android .my-menu {
-		top:44px !important;
-		background-color:#3F3F37;
+	.avatar-menu > .header {
+		-webkit-flex: 4;
+    	padding-top: 40px;
+
+	}
+
+	.menu-options {
+		text-align: left;
+
+		.list {
+			padding-top:0px;
+		}
+	}
+
+	.img-avatar {
+		width:96px;
+		height:96px;
+		border-radius:50%;
+	}
+
+	.menu-avatar-name {
+		color:#FFF;
+		padding-bottom:5px;
+	}
+
+	.img-avatar-header {
+		border-bottom: 1px rgba(255,255,255,0.1) solid !important;
+		border-bottom-width: 70%;
 	}
 
 }
 
-.profile {
-	.center-card-avatar {
-		max-width: $avatar-size !important;
-		max-height: $avatar-size !important;
-		width: $avatar-size;
-		height: $avatar-size;
-		left:50% !important;
-		margin-left:-($avatar-size/2);
-	}
+@import "scss/profile.app.scss";
 
-	.profile-background {
-		background-color:$yellow;
-	}
-
-	#user-info {
-		margin-top:30%;
-	}
-
-	#user-options {
-		
-		.option-text {
-			font-size:12px;
-		}
-			
-		#fav {
-			font-size:20px;
-		}
-
-		#location {
-			font-size:20px;
-		}
-	}
-
-}
 
 
 

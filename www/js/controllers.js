@@ -33,4 +33,50 @@ angular.module('starter.controllers', [])
 .controller('ProfileCtrl', function($scope, $rootScope) {
 
   
+})
+.controller('BandProfileCtrl', function($scope, $rootScope) {
+
+  $scope.range = function(min, max, step) {
+    step = step || 1;
+    var input = [];
+    for (var i = min; i <= max; i += step) {
+        input.push(i);
+    }
+    return input;
+  };
+
+
+
+  $scope.musics = [
+    {
+      name: 'Go To Hell For Heaven\'s Sake',
+      duration: '05:23'
+    },
+    {
+      name: 'True Friends',
+      duration: '03:54'
+    },
+    {
+      name: 'House of Wolves',
+      duration: '06:10'
+    },
+    {
+      name: 'And the Snakes Starts to Sing',
+      duration: '04:14'
+    },
+    {
+      name: 'Throne',
+      duration: '06:22'
+    },
+    {
+      name: 'Avalanche',
+      duration: '04:25'
+    },
+    {
+      name: 'Follow You',
+      duration: '04:53'
+    },
+  ]
+
 });
+

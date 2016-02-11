@@ -1,0 +1,33 @@
+<ion-view view-title="" class="profile">
+  <ion-content class="padding no-header band-profile-background">
+    
+
+      <div class="item-avatar">
+        <img class="center-card-avatar" src="img/bmth_back.png">
+      </div>
+      
+      <div id="user-info">
+        <h2 class="text-center custom-font">Bring Me The Horizon</h2>
+        <p class="text-center open-sans">Metalcore</p>
+      </div>
+
+      <div class="action-bar">
+        <a class="button round"><i class="icon ion-heart assertive"></i></a>
+        <a class="button round"><i class="icon ion-location balanced"></i></a>
+        <a class="button round"><i class="icon ion-ios-list positive"></i></a>
+      </div>
+
+      <br>
+      
+      <ul class="list">
+        <li class="item item-icon-left" ng-repeat="music in musics">
+          <i class="icon ion-play"></i> 
+          {{music.name}}
+          <span class="item-note">
+            {{music.duration}}
+          </span>  
+        </li>
+      </ul>
+
+  </ion-content>
+</ion-view>
